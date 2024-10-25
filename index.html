@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Data Scientist / Data Analyst</title>
+    <title>Portfolio de Mohamed Koualil</title>
     <style>
+        /* Style global */
         body {
             font-family: Arial, sans-serif;
+            color: #333;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
-            color: #333;
         }
         header, footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1em 0;
+            padding: 1em;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
         }
         section {
             padding: 2em;
@@ -24,52 +30,86 @@
             margin: auto;
         }
         h2 {
-            color: #444;
+            color: #555;
+            text-align: center;
         }
-        .project, .skill {
-            margin: 0.5em 0;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 48%;
+            margin: 1em 0;
+            padding: 1em;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer p {
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Portfolio de Mohamed Koualil</h1>
-    <p>Data Scientist | Data Analyst</p>
+    <h1>Mohamed Koualil</h1>
+    <p>Data Scientist | Data Analyst | Passionné de nouvelles technologies</p>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <section id="about">
     <h2>À propos de moi</h2>
-    <p>Passionné par l'analyse de données et l'intelligence artificielle, j'ai une solide expertise en modélisation prédictive, analyse de données et traitement de big data. Mon objectif est de transformer les données en informations exploitables pour améliorer la prise de décision.</p>
+    <p>Je suis un Data Scientist et Data Analyst passionné par l'analyse des données et l'innovation technologique. Avec une expertise en modélisation prédictive, machine learning et traitement de big data, j'aide les entreprises à transformer leurs données en décisions stratégiques.</p>
 </section>
 
 <section id="skills">
     <h2>Compétences</h2>
-    <div class="skill">Langages de programmation : Python, SQL, R</div>
-    <div class="skill">Analyse et visualisation de données : Pandas, Matplotlib, Power BI, Tableau</div>
-    <div class="skill">Machine Learning : Scikit-Learn, TensorFlow</div>
-    <div class="skill">Big Data : Hive, Hadoop, Spark (selon la préférence de mention)</div>
+    <ul>
+        <li>Langages : Python, SQL, R</li>
+        <li>Analyse de données : Pandas, Matplotlib, Power BI, Tableau</li>
+        <li>Machine Learning : Scikit-Learn, TensorFlow</li>
+        <li>Big Data : Hive, Hadoop, Spark (si pertinent)</li>
+    </ul>
 </section>
 
 <section id="projects">
     <h2>Projets</h2>
-    <div class="project">
-        <h3>Détection de fraudes en assurance</h3>
-        <p>Utilisation de modèles de machine learning pour identifier des comportements frauduleux dans les données de transactions d'assurance.</p>
-    </div>
-    <div class="project">
-        <h3>Prédiction de la demande de produits</h3>
-        <p>Analyse de données de vente pour prédire la demande de produits et optimiser les stocks pour une entreprise de e-commerce.</p>
-    </div>
-    <div class="project">
-        <h3>Conception d'un entrepôt de données pour l'analyse médicale</h3>
-        <p>Création d'un entrepôt de données pour centraliser et analyser des données médicales, permettant d'obtenir des insights pour la santé publique.</p>
+    <div class="container">
+        <div class="card">
+            <h3>Détection de fraudes</h3>
+            <p>Création de modèles de machine learning pour identifier les comportements frauduleux dans les données de transactions d'assurance.</p>
+        </div>
+        <div class="card">
+            <h3>Prédiction de la demande de produits</h3>
+            <p>Analyse de données de vente pour prédire la demande et optimiser les stocks pour une entreprise de e-commerce.</p>
+        </div>
+        <div class="card">
+            <h3>Entrepôt de données médicales</h3>
+            <p>Conception d'un entrepôt de données pour centraliser et analyser les données médicales, permettant d'obtenir des insights pour la santé publique.</p>
+        </div>
+        <div class="card">
+            <h3>Classification de clients</h3>
+            <p>Utilisation de modèles de clustering pour segmenter les clients en fonction de leur comportement d'achat.</p>
+        </div>
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email : mohamed.koualil@email.com</p>
+    <p>Pour toute question ou opportunité de collaboration, contactez-moi :</p>
+    <p>Email : <a href="mailto:mohamed.koualil@email.com">mohamed.koualil@email.com</a></p>
     <p>LinkedIn : <a href="https://www.linkedin.com/in/mohamed-koualil" target="_blank">linkedin.com/in/mohamed-koualil</a></p>
     <p>Téléphone : +212 777649936</p>
 </section>
